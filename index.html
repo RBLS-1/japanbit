@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japanbit - Authentic Japanese Products, Direct from Source</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.9), rgba(44, 62, 80, 0.85)), 
+                        url('hero-bg.jpg') center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .hero-bg .logo {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-bg .logo-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-bg .hero-tagline {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0 2rem;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #c41e3a;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .logo-subtitle {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #c41e3a, #e74c3c);
+            margin: 2rem auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .cta-section p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: inline-block;
+            background: #f8f9fa;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: #c41e3a;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .ebay-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c41e3a, #e74c3c);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .ebay-badge:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg {
+                padding: 3rem 1.5rem;
+            }
+
+            .hero-bg .logo {
+                font-size: 2.5rem;
+            }
+
+            .hero-bg .hero-tagline {
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            .hero, .cta-section {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-bg">
+        <div class="logo">japanbit</div>
+        <div class="logo-subtitle">Direct from Japan</div>
+        <p class="hero-tagline">Authentic Japanese products sourced by a British expat with 17+ years of local knowledge</p>
+    </section>
+
+    <div class="container">
+        <main>
+            <section class="hero">
+                <h1>How It Works</h1>
+                <div class="divider"></div>
+                <p class="tagline">
+                    Based in Nagasaki, I source genuine Japanese products for international customers. 
+                    From everyday items to specialty goods that are difficult to find outside Japan.
+                </p>
+
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🇬🇧 🇯🇵</div>
+                        <h3>17+ Years in Japan</h3>
+                        <p>Deep local knowledge and established supplier relationships</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <h3>100% Authentic</h3>
+                        <p>All products sourced directly from Japanese retailers and suppliers</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📦</div>
+                        <h3>Direct Shipping</h3>
+                        <p>Items ship straight from Japan to your door</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Looking for Something Specific?</h2>
+                <p>Whether you know exactly what you want or need help exploring what's available, I can help you find it.</p>
+                
+                <div class="contact-info">
+                    <a href="https://www.ebay.com/usr/YOUR_EBAY_USERNAME">Find me on eBay</a>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 0.9rem;">
+                    Send me a message with what you're looking for, and I'll let you know about availability and pricing.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>japanbit &copy; 2025 | Nagasaki, Japan</p>
+        </footer>
+    </div>
+</body>
+</html>
